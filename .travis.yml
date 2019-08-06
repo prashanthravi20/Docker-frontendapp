@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -f Dockerfile.dev -t prashanth20/Docker-frontendapp .
+  - docker build -f Dockerfile.dev -t prashanth20/docker-frontendapp .
 
 script:
   - docker run prashanth20/docker-frontendapp npm run test -- --coverage
